@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* CSS Document */
+
+	#fix{
+		position: fixed;
+		bottom : 5%;
+		right: 5px;
+		padding: 5px;
+	}
+	#wrapper{
+		height: 1100px;
+	}
+	body {
+		width: 960px;
+		margin: 0 auto;
+	}
+	#low{
+		height: 10%;
+		text-align: right;
+		color: gray;
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+
+	.top3 {
+		margin: 20px;
+		right: 90%;
+		height: 40px;
+		width: 940px;
+	}
+	.top {
+		margin: 0 10px 40px;
+		padding: 10px;
+		height: 80px;
+		width: 940px;
+	}
+	.slide ul,li{
+		list-style:none;
+	}
+	.icon1 {
+			background-image: url("image/icon_bag.png");
+			float: right;
+			height: 40px;
+			width: 40px;
+			margin: 0px 5px;
+			left: 1024px;
+			top: 51px;
+	}
+	.icon2 {
+		background-image: url("image/icon_my.png");
+		float: right;
+		height: 43px;
+		margin: 0px 5px;
+		left: 968px;
+		width: 43px;
+		top: 51px;
+		}
+	.logo {
+		display: inline-block;
+		background-image: url("image/logo.png");
+		background-repeat: no-repeat;
+		background-size: 100px 80px;
+		height: 80px;
+		width: 100px;
+	}
+	.weather {
+		margin: 5px 8px;
+		padding: 2px;
+		float: left;
+		height: 220px;
+		width: 220px;
+	}
+	.col {
+		margin: 10px;
+		float: left;
+		height: 180px;
+		width: 220px;
+	}
+	.con {
+		margin: 10px;
+		padding: 2px;
+		float: left;
+		height: 220px;
+		width: 220px;
+	}
+/* checkbox */
+	/*red*/
+	input[id="r"]+label{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border: 2px solid #FF0000;
+		cursor: pointer;
+		background-color: #FF0000;
+	}
+	input[id="r"]:checked+label{
+		background-color: white;
+	}
+	/*orange*/
+	input[id="o"]+label{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border: 2px solid #FF8B00;
+		cursor: pointer;
+		background-color: #FF8B00;
+	}
+	input[id="o"]:checked+label{
+		background-color: white;
+	}
+	/*yellow*/
+	input[id="y"]+label{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border: 2px solid #FFF700;
+		cursor: pointer;
+		background-color: #FFF700;
+	}
+	input[id="y"]:checked+label{
+		background-color: white;
+	}
+	/*green*/
+	input[id="g"]+label{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border: 2px solid #00FF03;
+		cursor: pointer;
+		background-color: #00FF03;
+	}
+	input[id="g"]:checked+label{
+		background-color: white;
+	}
+	/*blue*/
+	input[id="b"]+label{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border: 2px solid #0D00FF;
+		cursor: pointer;
+		background-color: #0D00FF;
+	}
+	input[id="b"]:checked+label{
+		background-color: white;
+	}
+	/*puple*/
+	input[id="p"]+label{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border: 2px solid #C800F3;
+		cursor: pointer;
+		background-color: #C800F3;
+	}
+	input[id="p"]:checked+label{
+		background-color: white;
+	}
+	/*white*/
+	input[id="w"]+label{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border: 2px solid #FFFFFF;
+		cursor: pointer;
+		background-color: #FFFFFF;
+	}
+	input[id="w"]:checked+label{
+		background-color: white;
+	}
+	/*black*/
+	input[id="bl"]+label{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border: 2px solid #000000;
+		cursor: pointer;
+		background-color: #000000;
+	}
+	input[id="bl"]:checked+label{
+		background-color: white;
+	}
+	#color input {
+		display: none;
+	}
+/*게시판 페이지 번호*/
+	.num_id ul {
+		list-style:none;
+		float:left;
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+	.num_id ul li {
+		float:left;
+	}
+	.num_id ul li a {
+		float:left;
+		padding:4px;
+		margin-right:3px;
+		width:15px;
+		color:#59190B;
+		font:bold 12px tahoma;
+		border:1px solid #F2E0D0;
+		text-align:center;
+		text-decoration:none;
+	}
+	.num_id ul li a:hover, .num_id ul li a:focus {
+		color:#F2E0D0;
+		border:1px solid #BF9E80;
+		background-color:#BF9E80;
+	}

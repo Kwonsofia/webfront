@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index.html</title>
+<link rel="stylesheet" href="common.css" type="text/css">
+<style type="text/css">
+	.side {
+		float: left;
+		height: 90%;
+		width: 200px;
+		padding: 5px;
+		margin: 0 5px 0 0;
+	}
+    .side ul {
+        list-style-type: none;  
+        margin: 5px;            
+        padding: 5px;           
+    }
+    .side ul li {
+        color: saddlebrown;
+        float: left;                
+        line-height: 40px;          
+        vertical-align: middle;     
+        text-align: center;         
+             
+	}
+    .menuLink, .submenuLink {
+        text-decoration:none;               
+        display: block;                     
+        width: 178px;                       
+        font-size: 13px;                    
+        font-weight: bold;                  
+        font-family: "Trebuchet MS", Dotum; 
+    }
+    .menuLink {
+        color: #F2E0D0;
+		background: #A6785D;
+    }
+	.topMenuLi{
+		margin: 5px;
+	}
+    .topMenuLi:hover .menuLink {
+        color: #400101;                 
+        background-color: #A6785D;  
+    }
+    .longLink {
+        width: 178px;
+		right: -10px;
+    }
+    .submenuLink {
+        color: #400101;             
+        background-color: #F2E0D0;
+    }
+    .submenu {
+	position: static;
+	height: 33px;
+	width: 180px;
+    }
+    .submenu li {
+        display: block;
+    }
+    .submenuLink:hover {
+        color: #A6785D;            
+        background-color: #D9BBA9;  
+    }
+	.pro {
+		float: left;
+		margin: 10px;
+		width: 700px;
+		height: 430px;
+		padding: 5px;
+	}
+	.back {
+		float: right;
+		margin: 50px 70px;
+	}
+	.button_base a{
+		margin: 0;
+		border: 0;
+		font-size: 13px;
+		position: relative;
+		text-align: center;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-user-select: none;
+	}
+	.button_base:hover {
+		cursor: pointer;
+	}
+	.b01_simple_rollover a{
+		color: #F2E0D0;
+		text-decoration: none;
+		padding: 10px 20px;
+		background-color: #A6785D;
+		font-family: "Trebuchet MS", Dotum;
+	}
+	.b01_simple_rollover a:hover {
+		color: #F2E3D5;
+		background-color: #400101;
+	}
+	/* checkbox */
+	input[id="r"]{
+	display: none;
+	}
+	input[id="o"]{
+	display: none;
+	}
+	input[id="y"]{
+	display: none;
+	}
+	input[id="g"]{
+	display: none;
+	}
+	input[id="b"]{
+	display: none;
+	}
+	input[id="p"]{
+	display: none;
+	}
+	input[id="w"]{
+	display: none;
+	}
+	input[id="bl"]{
+	display: none;
+	}
+	.top2 #color{
+		float: left;
+		margin: 10px 350px;
+	}
+	#box{
+		width: 330px;
+		height: 130px;
+		font-family: "Trebuchet MS", Dotum;
+	}
+	#tab{
+		width="698";
+		height="432";
+		font-family: "Trebuchet MS", Dotum;
+	}
+	#pho{
+		margin: 10px;
+		padding: 15px;
+		width: 330px;
+		height: 330px;
+	}
+	#line1{
+		border-bottom: 3px solid saddlebrown;
+		padding: 0 0 9px 0;
+	}
+	.line2{
+		padding: 9px 0 0 0 ;
+	}
+</style>
+</head>
+
+<body style="background-color: #F2E0D0">
+<div id="wrapper">
+	<div class="top3" align="right">
+			<a href="#"><div class="icon1"></div></a>
+			<a href="mypage.html"><div class="icon2"></div></a>
+		</div>
+		<div class="top" id="high" align="center">
+			<a href="index.html"><div class="logo"></div></a>
+		</div>
+	<section class="side">
+		  <ul>
+		    <li class="topMenuLi"> <a class="menuLink" href="info.html">INFO</a>
+		      <ul class="submenu">
+		        <li><a href="info.html" class="submenuLink longLink">PATHON COLOR</a></li>
+				<li><a href="#" class="submenuLink longLink">LSOS 란?</a></li>
+				<li><a href="#" class="submenuLink longLink">TIP</a></li>
+	          </ul>
+	        </li>
+		    <li class="topMenuLi"> <a class="menuLink" href="best.html">BEST50</a> </li>
+		    <li class="topMenuLi"> <a class="menuLink" href="style.html">STYLE</a>
+		      <ul class="submenu">
+		        <li><a href="#" class="submenuLink longLink">CASUAL</a></li>
+						<li><a href="#" class="submenuLink longLink">FAMININE</a></li>
+						<li><a href="#" class="submenuLink longLink">MODERN</a></li>
+	          </ul>
+	        </li>
+		    <li class="topMenuLi"> <a class="menuLink" href="post.html">POST</a>
+		      <ul class="submenu">
+		        <li><a href="post.html" class="submenuLink longLink">공지사항</a></li>
+				<li><a href="#" class="submenuLink longLink">자유게시판</a></li>
+				<li><a href="#" class="submenuLink longLink">Q&#38;A</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	</section>
+	<div class="pro">
+		<table id="tab">
+			<tr>
+				<td height="40" colspan="2" id="line1">title :&nbsp;<input type="text" value="title"></td>
+			</tr>
+			<tr >
+				<td width="340" height="340" rowspan="4" align="center" id="pho"><img src="image/photo.jpg" alt="photo"></td>
+				<td width="340" height="20" class="line2">Description of the style</td>
+			</tr>
+			<tr>
+				<td><textarea name="content" cols="50" rows="12" ></textarea></td>
+			</tr>
+			<tr>
+				<td class="line2">Infomation<br>ex&#41;shopping mall, price..</td>
+			</tr>
+			<tr>
+				<td><textarea name="content" cols="50" rows="5" ></textarea></td>
+			</tr>
+			<tr height="10px;">
+				<td align="center">
+					<form id="color">
+						<input type="checkbox" id="r">
+							<label for="r"></label>
+						<input type="checkbox" id="o">
+							<label for="o"></label>
+						<input type="checkbox" id="y">
+							<label for="y"></label>
+						<input type="checkbox" id="g">
+							<label for="g"></label>
+						<input type="checkbox" id="b">
+							<label for="b"></label>
+						<input type="checkbox" id="p">
+							<label for="p"></label>
+						<input type="checkbox" id="w">
+							<label for="w"></label>
+						<input type="checkbox" id="bl">
+							<label for="bl"></label>
+					</form>
+				</td>
+				<td align="center">
+					<form>
+						<label><input type="checkbox" name="style" value="1">CASUAL</label>
+						<label><input type="checkbox" name="style" value="2">FAMININE</label>
+						<label><input type="checkbox" name="style" value="3">MODERN</label>
+					</form>
+				</td>
+			</tr>
+		</table>
+ 	</div>
+	<div class="back">
+    	<div class="button_base b01_simple_rollover"><a href="add.html">add</a></div>
+	</div>
+	
+</div>
+	<footer id="low">COPYRIGHT © __teiubasc. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

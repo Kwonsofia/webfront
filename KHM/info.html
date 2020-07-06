@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index.html</title>
+<link rel="stylesheet" href="common.css" type="text/css">
+<style type="text/css">
+		*{margin:0;padding:0;}
+    .slide{
+		height:300px;
+		padding: 5px;
+		margin: 20px 0px;
+		width: 733px;
+		overflow:hidden;
+	}
+    .slide ul{position:relative;height:100%;}
+    .slide li{
+		position: absolute;
+		left: 2px;
+		right: 0;
+		top: 4px;
+		bottom: 0;
+		opacity: 0;
+		animation: fade 20s infinite;
+		width: 733px;
+	}
+    .slide li:nth-child(1){
+		background-image: url("image/2020.PNG");
+		background-repeat: no-repeat;
+		animation-delay:0s}
+    .slide li:nth-child(2){
+		background:url("image/2019.PNG");
+		background-repeat: no-repeat;
+		animation-delay:5s
+	}
+    .slide li:nth-child(3){
+		background:url("image/2018.PNG");
+		background-repeat: no-repeat;
+		animation-delay:10s
+	}
+    .slide li:nth-child(4){
+		background:url("image/2017.PNG");
+		background-repeat: no-repeat;
+		animation-delay:15s
+	}
+     /* 100 / 8 = 12.5 */
+    @keyframes fade {
+      0% {opacity:0;}
+      5% {opacity:1;}
+      25% {opacity:1;}
+      30% {opacity:0;}
+      100% {opacity:0;}
+    }
+	
+	.side {
+		float: left;
+		height: 90%;
+		width: 200px;
+		padding: 5px;
+		margin: 0 5px 0 0;
+	}
+    .side ul {
+        list-style-type: none;  
+        margin: 5px;            
+        padding: 5px;           
+    }
+    .side ul li {
+        color: saddlebrown;
+        float: left;                
+        line-height: 40px;          
+        vertical-align: middle;     
+        text-align: center;         
+             
+	}
+    .menuLink, .submenuLink {
+        text-decoration:none;               
+        display: block;                     
+        width: 178px;                       
+        font-size: 13px;                    
+        font-weight: bold;                  
+        font-family: "Trebuchet MS", Dotum; 
+    }
+    .menuLink {
+        color: #F2E0D0;
+		background: #A6785D;
+    }
+	.topMenuLi{
+		margin: 5px;
+	}
+    .topMenuLi:hover .menuLink {
+        color: #400101;                 
+        background-color: #A6785D;  
+    }
+    .longLink {
+        width: 178px;
+		right: -10px;
+    }
+    .submenuLink {
+        color: #400101;             
+        background-color: #F2E0D0;
+    }
+    .submenu {
+	position: static;
+	height: 33px;
+	width: 180px;
+    }
+    .submenu li {
+        display: block;
+    }
+    .submenuLink:hover {
+        color: #A6785D;            
+        background-color: #D9BBA9;  
+    }
+	#topmenu {
+        height: 60px;  
+        width: 700px;  
+		padding: 10px 5px 10px;
+		margin: 0 13px;
+		float: left;
+    }
+    #topmenu ul {
+        list-style-type: none;  
+        margin: 10px 0 0 15px;            
+        padding: 0px;           
+    }
+    #topmenu ul li {
+        color: #A66B49;
+        float: left;                
+        line-height: 30px;          
+        vertical-align: middle;     
+        text-align: center; 
+		background: #BF9E80;
+	}
+    .menulink{
+        text-decoration:none;               
+        display: block;                     
+        width: 135px;                       
+        font-size: 13px;                    
+        font-weight: bold;                  
+        font-family: "Trebuchet MS", Dotum; 
+        color: #F2E0D0;
+    }
+	.topmenuli{
+		margin: 5px 0 0 20px;
+		padding: 0 5px;
+	}
+    .topmenuli:hover .menulink {
+        color: #8C4830;
+    }
+	.post{
+		height:300px;
+		padding: 5px;
+		margin: 0px 0px;
+		width: 733px;
+		float: left;
+		border: 1px solid;
+	}
+</style>
+</head>
+
+<body style="background-color: #F2E0D0">
+	<div id="wrapper">
+		<div class="top3" align="right">
+			<a href="#"><div class="icon1"></div></a>
+			<a href="mypage.html"><div class="icon2"></div></a>
+		</div>
+		<div class="top" id="high" align="center">
+			<a href="index.html"><div class="logo"></div></a>
+		</div>
+		<div id="fix">
+		<ul>
+			<li><a href="#high"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','image/top_hover.png',1)"><img src="image/top.png" alt="" width="30" id="Image11"></a></li>
+			<li><a href="#low"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','image/bottom_hover.png',1)"><img src="image/bottom.png" alt="" width="30" id="Image10"></a></li>
+		</ul>
+	</div>
+	<section class="side">
+		  <ul>
+		    <li class="topMenuLi"> <a class="menuLink" href="info.html" style="color: #400101">INFO</a>
+		      <ul class="submenu">
+		        <li><a href="info.html" class="submenuLink longLink">PATHON COLOR</a></li>
+				<li><a href="#" class="submenuLink longLink">LSOS 란?</a></li>
+				<li><a href="#" class="submenuLink longLink">TIP</a></li>
+	          </ul>
+	        </li>
+		    <li class="topMenuLi"> <a class="menuLink" href="best.html">BEST50</a> </li>
+		    <li class="topMenuLi"> <a class="menuLink" href="style.html">STYLE</a>
+		      <ul class="submenu">
+		        <li><a href="#" class="submenuLink longLink">CASUAL</a></li>
+						<li><a href="#" class="submenuLink longLink">FAMININE</a></li>
+						<li><a href="#" class="submenuLink longLink">MODERN</a></li>
+	          </ul>
+	        </li>
+		    <li class="topMenuLi"> <a class="menuLink" href="post.html">POST</a>
+		      <ul class="submenu">
+		        <li><a href="post.html" class="submenuLink longLink">공지사항</a></li>
+				<li><a href="#" class="submenuLink longLink">자유게시판</a></li>
+				<li><a href="#" class="submenuLink longLink">Q&#38;A</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	</section>
+	<div class="slide">
+	  <ul>
+		  <li></li>
+		  <li></li>
+		  <li></li>
+	  	  <li></li>
+		</ul>
+	</div>
+	<nav id="topmenu" >
+		<ul>
+			<li class="topmenuli">
+				<a class="menulink" href="#">2020</a>
+			</li>
+		  	<li class="topmenuli">
+				<a class="menulink" href="#">2019</a>
+			</li>
+		  	<li class="topmenuli">
+				<a class="menulink" href="#">2018</a>
+			</li>
+			<li class="topmenuli">
+				<a class="menulink" href="#">2017</a>
+			</li>
+	   </ul>
+	</nav>
+	<div class="post">
+		<iframe scr="http://www.pantone.kr/ColoroftheYear2020.html" frameborder="0" height="300" width="733" name="pantone" >
+		</iframe>
+	</div>
+</div>
+<footer class="foot" id="low">COPYRIGHT © __teiubasc. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>

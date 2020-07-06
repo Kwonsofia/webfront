@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index.html</title>
+<link rel="stylesheet" href="common.css" type="text/css">
+<style type="text/css">
+		*{margin:0;padding:0;}
+    .slide{
+		height:300px;
+		padding: 5px;
+		margin: 20px 0px;
+		width: 960px;
+		overflow:hidden;
+	}
+    .slide ul{position:relative;height:100%;}
+    .slide li{
+		position: absolute;
+		left: -7px;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		opacity: 0;
+		animation: fade 20s infinite;
+		width: 967px;
+	}
+    .slide li:nth-child(1){
+		background-image: url("image/slide.PNG");
+		background-repeat: no-repeat;
+		animation-delay:0s}
+    .slide li:nth-child(2){
+		background:url("image/slide2.PNG");
+		background-repeat: no-repeat;
+		animation-delay:5s
+	}
+    .slide li:nth-child(3){
+		background:url("image/slide3.PNG");
+		background-repeat: no-repeat;
+		animation-delay:10s
+	}
+    .slide li:nth-child(4){
+		background:url("image/slide4.jpg");
+		background-repeat: no-repeat;
+		animation-delay:15s
+	}
+     /* 100 / 8 = 12.5 */
+    @keyframes fade {
+      0% {opacity:0;}
+      5% {opacity:1;}
+      25% {opacity:1;}
+      30% {opacity:0;}
+      100% {opacity:0;}
+    }
+	#topMenu {
+        height: 30px;  
+        width: 940px;  
+		padding: 0 0px 20px 10px;
+    }
+    #topMenu ul {
+        list-style-type: none;  
+        margin: 0px;            
+        padding: 0px;           
+    }
+    #topMenu ul li {
+        color: #A66B49;
+        float: left;                
+        line-height: 30px;          
+        vertical-align: middle;     
+        text-align: center;   
+		position: relative;
+             
+	}
+    .menuLink, .submenuLink {
+        text-decoration: none;               
+        display: block;                     
+        width: 140px;                       
+        font-size: 13px;                    
+        font-weight: bold;                  
+        font-family: "Trebuchet MS", Dotum; 
+    }
+    .menuLink {
+        color: #A66B49;
+    }
+	.topMenuLi{
+		margin: 0 10px;
+		padding: 0 10px;
+	}
+    .topMenuLi:hover .menuLink {
+        color: #8C4830;                 
+        background-color: white;  
+    }
+    .longLink {
+        width: 140px;
+		
+    }
+    .submenuLink {
+        color: #A66B49;             
+        background-color: white;
+		margin-right: -1px;
+    }
+    .submenu {
+		position: absolute;
+		height: 0px;
+		overflow: hidden;
+		transition: height .2s;
+		-webkit-transition: height .2s;
+		-moz-transition: height .2s;
+		-o-transition: height .2s;
+		z-index: 1;
+    }
+    .topMenuLi:hover .submenu {
+        height: 93px; 
+		
+    }
+    .submenuLink:hover {
+        color: #59190B;            
+        background-color: #BF9E80;  
+    }
+	.nav-search {
+		float: right;
+		width: 25px;
+		height: 25px;
+		background-image: url("image/search.png");
+		margin: 8px 5px;
+	}
+	.con {
+		margin: 5px;
+		padding: 2px;
+		float: left;
+		height: 220px;
+		width: 220px;
+	}
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background-color: #F2E0D0" onLoad="MM_preloadImages('image/weather_hover.png')">
+<div id="wrapper">
+	<div class="top3" align="right">
+			<a href="#"><div class="icon1"></div></a>
+			<a href="mypage.html"><div class="icon2"></div></a>
+		</div>
+		<div class="top" id="high" align="center">
+			<a href="index.html"><div class="logo"></div></a>
+		</div>
+	<div id="fix">
+		<ul>
+			<li><a href="#high"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','image/top_hover.png',1)"><img src="image/top.png" alt="" width="30" id="Image11"></a></li>
+			<li><a href="#low"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','image/bottom_hover.png',1)"><img src="image/bottom.png" alt="" width="30" id="Image10"></a></li>
+		</ul>
+	</div>
+  <nav id="topMenu" >
+			<ul>
+			  <li class="topMenuLi">
+					<a class="menuLink" href="info.html">INFO</a>
+					<ul class="submenu">
+						<li><a href="info.html" class="submenuLink longLink">PATHON COLOR</a></li>
+						<li><a href="#" class="submenuLink longLink">LSOS 란?</a></li>
+						<li><a href="#" class="submenuLink longLink">TIP</a></li>
+					</ul>
+				</li>
+				<li>|</li>
+			  <li class="topMenuLi">
+					<a class="menuLink" href="best.html">BEST50</a>
+				</li>
+				<li>|</li>
+			  <li class="topMenuLi">
+					<a class="menuLink" href="style.html">STYLE</a>
+					<ul class="submenu">
+						<li><a href="#" class="submenuLink longLink">CASUAL</a></li>
+						<li><a href="#" class="submenuLink longLink">FAMININE</a></li>
+						<li><a href="#" class="submenuLink longLink">MODERN</a></li>
+					</ul>
+				</li>
+				<li>|</li>
+				<li class="topMenuLi">
+					<a class="menuLink" href="post.html">POST</a>
+					<ul class="submenu">
+						<li><a href="post.html" class="submenuLink longLink">공지사항</a></li>
+						<li><a href="#" class="submenuLink longLink">자유게시판</a></li>
+						<li><a href="#" class="submenuLink longLink">Q&#38;A</a></li>
+					</ul>
+				</li>
+				<li>|</li>
+				<li class="topMenuLi">
+					<a class="menuLink" href="mypage.html">MYPAGE</a>
+				</li>
+				
+		  </ul>
+		</nav>
+		<div class="slide">
+				<ul>
+				  <li></li>
+				  <li></li>
+				  <li></li>
+				  <li></li>
+				</ul>
+		</div>
+
+		<section class="weather"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','image/weather_hover.png',1)"><img src="image/weather.png" alt="" width="220" height="220" id="Image2"></a></section>
+		<section class="con"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','image/con_hover.png',1)"><img src="image/KakaoTalk_20191216_213916019.jpg" alt="" width="220" id="Image5"></a></section>
+	  	<section class="con"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','image/con_hover.png',1)"><img src="image/KakaoTalk_20191216_213915381.jpg" alt="" width="220" id="Image6"></a></section>
+		<section class="con"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','image/con_hover.png',1)"><img src="image/KakaoTalk_20191216_213915802.jpg" alt="" width="220" id="Image8"></a></section>
+	
+	</div>
+	
+<footer id="low">COPYRIGHT © __teiubasc. ALL RIGHTS RESERVED.</footer>	
+</body>
+</html>
